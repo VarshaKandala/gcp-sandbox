@@ -36,7 +36,7 @@ def slack_alert(add, destroy, change, replacements):
             'text': '\n'.join(replacements)
         })
 
-    text = 'Commit <https://github.com/khalid-gh/' + os.getenv('REPO_NAME') + '/commit/' + os.getenv('COMMIT_SHA') + '|' + os.getenv('SHORT_SHA') + '> has changes that need applying, view the full plan <https://console.cloud.google.com/cloud-build/builds/' + os.getenv('BUILD_ID') + '?project=' + os.getenv('PROJECT_ID') + '|here>\nTo apply run `gcloud builds submit --config ' + os.getenv('TERRAFORM_FOLDER') + '/cloudbuild-apply.yml --project ' + os.getenv('PROJECT_ID') + ' gs://' + os.getenv('PLAN_BUCKET') + '/' + os.getenv('BUILD_ID') + '/tfplan.tar.gz`'
+    text = 'Commit <https://github.com/VarshaKandala/' + os.getenv('REPO_NAME') + '/commit/' + os.getenv('COMMIT_SHA') + '|' + os.getenv('SHORT_SHA') + '> has changes that need applying, view the full plan <https://console.cloud.google.com/cloud-build/builds/' + os.getenv('BUILD_ID') + '?project=' + os.getenv('PROJECT_ID') + '|here>\nTo apply run `gcloud builds submit --config ' + os.getenv('TERRAFORM_FOLDER') + '/cloudbuild-apply.yml --project ' + os.getenv('PROJECT_ID') + ' gs://' + os.getenv('PLAN_BUCKET') + '/' + os.getenv('BUILD_ID') + '/tfplan.tar.gz`'
     print(text)
 
     message = {

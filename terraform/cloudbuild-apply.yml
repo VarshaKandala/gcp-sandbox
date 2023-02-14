@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: /bin/bash
+    args:
+      - -ce
+      - |-
+        gsutil cp gs://ons-gcr-binaries/terraform-1.1.4 /usr/bin/terraform
+        chmod 755 /usr/bin/terraform
+        terraform apply tfplan

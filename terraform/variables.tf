@@ -13,5 +13,5 @@ variable "region" {
 variable "slack_webhook" {
   type        = string
   description = "Ciphertext for the slack webhook"
-  default     = "CiQAeCmglnITVTMBsT/hi8aw27n3nLPDsehKXgkoKBy20DFEDcYSeQAeEE6rMpsj+lQSrDo9glvcZcxYtG8fcaLlSUgYdMyVSw8L2Iyd/zQK2rGgoBXX2dvjW8WqKjUwgzi1Pi2Zwle8Mbtf0gFpszpmRJJBziLB7nQluIzmCuuMvqRAKSvTVCvx8PY0kv0DVvU/G9ekTXbIPPOVT4nahHw="
+  default     = "CiQAhZWevf/3z6v1bN5cAStgwnSSGBuVZdXPnwUoHXfxQmjCyiQSegBNe+iRxhEBjKuWjOLzXTF0qbNA1PXOkgGTHnLSwXtRW9NndGwMF9dhfp9VfWhuLlX+E70pyl2oJFEWFRExbHAz9THhLqD+AgqdtVhgkKbI0keN8S3wRLxXRpnXMIFfXs+W3u9tken83AmBJ/K67Ui1BumLV2GaVeKo"
 }

@@ -22,5 +22,6 @@ module "project-services" {
     "monitoring.googleapis.com",
     "admin.googleapis.com",
     "osconfig.googleapis.com",
+    "notebooks.googleapis.com",
   ]
 }

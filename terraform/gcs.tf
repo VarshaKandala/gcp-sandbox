@@ -25,14 +25,3 @@ resource "google_storage_bucket" "tfplan" {
     }
   }
 }
-
-resource "google_storage_bucket" "permissions-test-bucket" {
-  name                        = "permissions-test-bucket-khalid"
-  location                    = var.region
-  storage_class               = "STANDARD"
-  uniform_bucket_level_access = true
-
-  versioning {
-    enabled = true
-  }
-}
